@@ -21,8 +21,8 @@ class Controller {
  	}
 
  	//Отображение
- 	protected function render($action,$model=null){
- 		$this->view->render($this->pathView.'/'.$action.'.php',$this->layouts);
+ 	protected function render($action,$model=[]){
+ 			$this->view->render($this->pathView.'/'.$action.'.php',$this->layouts,$model);
  	
  	}
 

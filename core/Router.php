@@ -54,7 +54,7 @@ class Router{
 	     
 	    // Если не загружен нужный класс контроллера или в нём нет
 	       // нужного метода — 404 
-	    if(!is_callable(array($this->controller, $this->action))){
+	   if(!is_callable(array($this->controller, $this->action))){
 	               header("HTTP/1.0 404 Not Found");
 	               return;
 	    }
@@ -65,7 +65,8 @@ class Router{
 	     
 	      
 	    // Ничего не применилось. 404.
-	    header("HTTP/1.0 404 Not Found");
+	  //  header("HTTP/1.0 404 Not Found");
+	 
 	    return;
 
 	}
